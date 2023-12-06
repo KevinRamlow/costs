@@ -1,5 +1,5 @@
 import styles from './NewProject.module.css'
-import ProjectForm from '../../project/ProjectForm'
+import ProjectForm from '../../project/projectForm/ProjectForm'
 
 import { useNavigate } from 'react-router-dom'
 
@@ -18,7 +18,7 @@ export default function NewProject() {
         'Content-type': 'application/json'
       },
       body: JSON.stringify(project)
-    })
+    })          
       .then((resp => resp.json()))
       .then((data) => {
         console.log(data)
