@@ -1,10 +1,10 @@
+import styles from './ProjectForm.module.css'
+
 import Input from '../../form/input/Input'
 import Select from '../../form/select/Select'
-import styles from './ProjectForm.module.css'
 import SubmitButton from '../../form/submitButton/SubmitButton'
 
 import { useEffect, useState } from 'react'
-
 
 export default function ProjectForm({ handleSubmit, btnText, projectData }) {
   const [categories, setCategories] = useState([])

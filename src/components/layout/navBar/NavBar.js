@@ -1,9 +1,9 @@
+import styles from './NavBar.module.css'
+
 import Container from "../container/Container"
 import logo from '../../../img/costs_logo.png'
 
 import { Link } from "react-router-dom"
-
-import styles from './NavBar.module.css'
 
 export default function NavBar() {
   return (
@@ -19,12 +19,6 @@ export default function NavBar() {
           </li>
           <li className={styles.item}>
             <Link to='/projects'>Projetos</Link>
-          </li>
-          <li className={styles.item}>
-            <Link to='/company'>Empresa</Link>
-          </li>
-          <li className={styles.item}>
-            <Link to='/contact'>Contato</Link>
           </li>
         </ul>
 

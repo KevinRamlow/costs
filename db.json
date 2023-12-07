@@ -1,5 +1,35 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "name": "Desenvolvimento do sistema",
+      "budget": "10000",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 2500,
+      "services": [
+        {
+          "name": "Contratar desenvolvedor ",
+          "cost": "2500",
+          "description": "Contratar alguém para desenvolver o sistema",
+          "id": "b09e7ffe-1faa-44d5-b533-5814491efccc"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Front-end do app",
+      "budget": "20000",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    }
+  ],
   "categories": [
     {
       "id": 1,

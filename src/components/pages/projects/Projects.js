@@ -1,13 +1,13 @@
+import styles from './Projects.module.css';
+
+import Loading from "../../loading/Loading";
 import Message from "../../layout/message/Message";
 import LinkButton from "../../layout/button/LinkButton";
 import Container from '../../layout/container/Container';
 import ProjectCard from "../../project/projectCard/ProjectCard";
 
-import { useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-
-import styles from './Projects.module.css';
-import Loading from "../../loading/Loading";
+import { useLocation } from 'react-router-dom';
 
 export default function Projects() {
   const [projects, setProjects] = useState([])

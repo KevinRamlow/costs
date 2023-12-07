@@ -1,6 +1,6 @@
-import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa'
-
 import styles from './Footer.module.css'
+
+import { FaInstagram, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 export default function Footer() {
   return (

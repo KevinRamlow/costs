@@ -1,18 +1,17 @@
 import styles from './ProjectPage.module.css'
 
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import { parse, v4 as uuidv4 } from 'uuid'
-
 import Loading from '../../loading/Loading'
+import Message from '../../layout/message/Message'
 import Container from '../../layout/container/Container'
 import ProjectForm from '../../project/projectForm/ProjectForm'
-import Message from '../../layout/message/Message'
 import ServiceForm from '../../service/serviceForm/ServiceForm'
 import ServiceCard from '../../service/serviceCard/ServiceCard'
 
+import { v4 as uuidv4 } from 'uuid'
+import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+
 export default function ProjectPage() {
-  
   const { id } = useParams()
 
   const [project, setProject] = useState([])
@@ -110,7 +109,6 @@ export default function ProjectPage() {
     )
 
     const projectUpdated = project
-
     projectUpdated.services = servicesUpdated
     projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(cost)
 

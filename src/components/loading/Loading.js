@@ -1,4 +1,5 @@
 import styles from './Loading.module.css'
+
 import loading from '../../img/loading.svg'
 
 export default function Loading() {
