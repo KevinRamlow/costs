@@ -1,17 +1,5 @@
 {
-  "projects": [
-    {
-      "name": "Teste atualizado",
-      "budget": "232",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    }
-  ],
+  "projects": [],
   "categories": [
     {
       "id": 1,
