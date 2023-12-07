@@ -8,6 +8,11 @@
   border-radius: 5px;
 }
 
+
+.error,
+.success{
+  font-weight: bold;
+}
 .success {
   color: #155724;
   background-color: #d4edda;

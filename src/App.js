@@ -6,6 +6,7 @@ import Contact from './components/pages/contact/Contact';
 import Projects from './components/pages/projects/Projects';
 import Container from './components/layout/container/Container';
 import NewProject from './components/pages/newProject/NewProject';
+import ProjectPage from './components/pages/projectPage/ProjectPage';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -17,10 +18,11 @@ function App() {
       <Container customClass='min_height'>
         <Routes>
           <Route exact path='/' element={<Home />}></Route>
-          <Route exact path='/projects' element={<Projects />}></Route>
-          <Route exact path='/company' element={<Company />}></Route>
-          <Route exact path='/contact' element={<Contact />}></Route>
-          <Route exact path='/newproject' element={<NewProject />}></Route>
+          <Route path ='/projects' element={<Projects />}></Route>
+          <Route path ='/company' element={<Company />}></Route>
+          <Route path ='/contact' element={<Contact />}></Route>
+          <Route path ='/newproject' element={<NewProject />}></Route>
+          <Route path ='/project/:id' element={<ProjectPage />}></Route>
         </Routes>
       </Container>
       
